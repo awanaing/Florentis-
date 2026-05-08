@@ -122,6 +122,8 @@
       color:rgba(255,255,255,.90); line-height:2.2; font-size:clamp(1rem, 2.1vw, 1.16rem);
     }
     .hero-actions{display:flex; flex-wrap:wrap; gap:14px; justify-content:center}
+    .hero-location-note{width:min(760px,100%); margin:28px auto 0; padding:16px 20px; border:1px solid rgba(237,220,184,.48); border-radius:22px; background:rgba(10,18,28,.34); color:rgba(255,255,255,.88); font-size:.86rem; line-height:2; backdrop-filter:blur(10px)}
+    .hero-location-note strong{color:var(--gold-pale); font-family:'Noto Serif TC',serif; font-weight:400}
     .btn{
       display:inline-flex; align-items:center; justify-content:center; border:0; cursor:pointer;
       padding:14px 28px; border-radius:999px; font-family:'Noto Serif TC',serif;
@@ -172,7 +174,7 @@
     .class-visual h2{margin:0 0 10px; font-family:'Noto Serif TC',serif; font-size:1.72rem; font-weight:300; letter-spacing:.14em}
     .class-visual p{margin:0; color:rgba(255,255,255,.82); font-size:.92rem}
     .class-info{padding:40px}
-    .meta-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:24px 0}
+    .meta-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin:24px 0}
     .meta{background:linear-gradient(180deg,#fff,#fffcf7); border:1px solid var(--line); border-radius:18px; padding:15px}
     .meta small{display:block; font-family:'Cormorant Garamond',serif; color:var(--gold); text-transform:uppercase; letter-spacing:.22em; font-size:.68rem}
     .meta span{font-size:.84rem; color:var(--ink-soft)}
@@ -187,7 +189,8 @@
     .batch small{font-family:'Cormorant Garamond',serif; color:var(--gold); letter-spacing:.28em; text-transform:uppercase}
     .batch h3{margin:10px 0 4px; font-family:'Noto Serif TC',serif; font-size:1.04rem; font-weight:400; letter-spacing:.06em}
     .batch .date{font-family:'Cormorant Garamond',serif; font-size:1.34rem; color:var(--ink)}
-    .batch .place{font-size:.78rem; color:var(--muted); margin-top:2px}
+    .batch .place{font-size:.78rem; color:var(--muted); margin-top:8px; line-height:1.9; background:rgba(182,128,63,.06); border:1px solid var(--line); border-radius:14px; padding:10px 12px}
+    .batch .place strong{color:var(--gold); font-weight:400}
     .batch p{font-size:.83rem; color:var(--ink-soft); line-height:2; text-align:justify}
     .learn{background:rgba(182,128,63,.06); border:1px solid var(--line); border-radius:18px; padding:14px; margin:10px 0 18px}
     .learn b{display:block; color:var(--gold); font-size:.80rem; margin-bottom:4px}
@@ -258,6 +261,7 @@
       .nav-inner{padding:10px 0}
       .nav-links{gap:14px}
       .origin-grid,.class-top,.payment-grid,.policy-grid,.founder-grid{grid-template-columns:1fr}
+      .meta-grid{grid-template-columns:repeat(2,1fr)}
       .level-grid{grid-template-columns:repeat(2,1fr)}
       .batches{grid-template-columns:1fr}
       .bundle{flex-direction:column; align-items:flex-start}
@@ -326,6 +330,9 @@
         <a class="btn btn-primary" href="#class1">查看㛊一班次</a>
         <a class="btn btn-secondary" href="https://lin.ee/v2h29RD" target="_blank" rel="noopener">官方 LINE 詢問</a>
       </div>
+      <div class="hero-location-note">
+        <strong>上課地點說明：</strong>七星潭、碧湖為各㛊的地脈共振來源與課程主題；所有實體課程皆於 <strong>花蓮市中央路三段 661 號</strong> 進行。
+      </div>
     </div>
   </header>
 
@@ -343,7 +350,7 @@
             關於「連結」的種子，在生命裡悄悄落土，經過長時間的整理、行走與沉澱，逐步匯流成 Florentis™ 花源天地共振系統。這不是單一工具的拼接，而是一條從土地經驗、身體感知與內在覺察慢慢長出的路。
           </p>
           <p class="lead" style="margin-top:18px">
-            去年起，我實地走訪花蓮七星潭、台北碧湖與更多台灣地點，用身體感受土地的節奏與場域氣息，將所感受到的路徑整理成可以帶人進入的課程架構。你要找的安定與力量，不一定在遠方，也可能就在腳下這片土地。
+            去年起，我實地走訪花蓮七星潭、台北碧湖與更多台灣地點，用身體感受土地的節奏與場域氣息，將所感受到的路徑整理成可以帶人進入的課程架構。這些地點是各㛊的地脈共振來源與象徵地圖；實際上課地點統一在花蓮市中央路三段 661 號。你要找的安定與力量，不一定在遠方，也可能就在腳下這片土地。
           </p>
           <div class="origin-quote">
             這套系統目前紮根於台灣 13 個共振點，並仍持續延展中。<br>
@@ -390,15 +397,16 @@
             <div class="class-visual-content">
               <div class="class-symbol">★</div>
               <h2>點燃靈魂的七盞燈</h2>
-              <p>在花蓮七星潭，以山海交會的場域作為起點，陪你重新連結方向感、內在節奏與行動前的清晰感。</p>
+              <p>以花蓮七星潭作為本㛊的地脈共振來源與象徵地圖，陪你重新連結方向感、內在節奏與行動前的清晰感。</p>
             </div>
           </div>
           <div class="class-info">
             <p class="lead" style="margin:0; font-size:.94rem">
-              這是 Florentis™ 的第一道門。當你走進七星潭，課程要帶你做的不是給你標準答案，而是透過身體感知、場域共振與結構化引導，讓你逐步辨識：此刻的自己在哪裡、下一步要往哪裡走。
+              這是 Florentis™ 的第一道門。㛊一以花蓮七星潭作為地脈共振來源，實際課程於花蓮教室進行。課程要帶你做的不是給你標準答案，而是透過身體感知、場域共振與結構化引導，讓你逐步辨識：此刻的自己在哪裡、下一步要往哪裡走。
             </p>
             <div class="meta-grid">
-              <div class="meta"><small>Place</small><span>花蓮七星潭</span></div>
+              <div class="meta"><small>Resonance Source</small><span>花蓮七星潭</span></div>
+              <div class="meta"><small>Classroom</small><span>花蓮市中央路三段 661 號</span></div>
               <div class="meta"><small>Energy</small><span>青龍守護 × 啟程能量</span></div>
               <div class="meta"><small>Focus</small><span>方向、感知、內在導航</span></div>
             </div>
@@ -419,7 +427,7 @@
             <small>第一班</small>
             <h3>靈擺｜感知之門 ①</h3>
             <div class="date">2026.07.18 — 07.19</div>
-            <div class="place">花蓮七星潭｜兩日實體課程</div>
+            <div class="place"><strong>地脈共振來源</strong>｜花蓮七星潭<br><strong>實際上課地點</strong>｜花蓮市中央路三段 661 號</div>
             <p>靈擺作為身體感知的延伸，協助你把原本模糊的細微訊號，整理成可以辨識與回應的方向線索。</p>
             <div class="learn">
               <b>你會學到</b>
@@ -442,7 +450,7 @@
             <small>第二班</small>
             <h3>空間淨化｜感知之門 ②</h3>
             <div class="date">2026.08.15 — 08.16</div>
-            <div class="place">花蓮七星潭｜兩日實體課程</div>
+            <div class="place"><strong>地脈共振來源</strong>｜花蓮七星潭<br><strong>實際上課地點</strong>｜花蓮市中央路三段 661 號</div>
             <p>當你開始辨識方向，下一步就是清理生活中的通道與場域，讓居住與工作空間更有支持感。</p>
             <div class="learn">
               <b>你會學到</b>
@@ -465,7 +473,7 @@
             <small>第三班</small>
             <h3>占星 12 宮光譜｜感知之門 ③</h3>
             <div class="date">2026.10.17 — 10.18</div>
-            <div class="place">花蓮七星潭｜兩日實體課程</div>
+            <div class="place"><strong>地脈共振來源</strong>｜花蓮七星潭<br><strong>實際上課地點</strong>｜花蓮市中央路三段 661 號</div>
             <p>透過 12 宮視角閱讀個人生命結構，協助你看清當前課題、資源配置與正在發生的節奏。</p>
             <div class="learn">
               <b>你會學到</b>
@@ -513,15 +521,16 @@
             <div class="class-visual-content">
               <div class="class-symbol">≋</div>
               <h2>認回內在的滋養泉源</h2>
-              <p>在台北碧湖的靜水場域中，學習接收、承載與回到更穩定的自己，讓內在資源重新流動。</p>
+              <p>以台北碧湖作為本㛊的地脈共振來源與象徵地圖，學習接收、承載與回到更穩定的自己，讓內在資源重新流動。</p>
             </div>
           </div>
           <div class="class-info">
             <p class="lead" style="margin:0; font-size:.94rem">
-              㛊二延續 㛊一 的方向感，將焦點帶回承接、滋養與內在資源。透過結構化內容與場域體驗，協助你整理心緒、回到更安穩的感受與生命節奏。
+              㛊二延續 㛊一 的方向感，將焦點帶回承接、滋養與內在資源。㛊二以台北碧湖作為地脈共振來源，實際課程於花蓮教室進行。透過結構化內容與場域體驗，協助你整理心緒、回到更安穩的感受與生命節奏。
             </p>
             <div class="meta-grid">
-              <div class="meta"><small>Place</small><span>台北碧湖</span></div>
+              <div class="meta"><small>Resonance Source</small><span>台北碧湖</span></div>
+              <div class="meta"><small>Classroom</small><span>花蓮市中央路三段 661 號</span></div>
               <div class="meta"><small>Energy</small><span>玄武穩固 × 水的節奏</span></div>
               <div class="meta"><small>Focus</small><span>接收、滋養、整合</span></div>
             </div>
@@ -542,7 +551,7 @@
             <small>第一班</small>
             <h3>盧恩符文｜宇宙結構 ①</h3>
             <div class="date">2026.11.21 — 11.22</div>
-            <div class="place">台北碧湖｜兩日實體課程</div>
+            <div class="place"><strong>地脈共振來源</strong>｜台北碧湖<br><strong>實際上課地點</strong>｜花蓮市中央路三段 661 號</div>
             <p>從符文象徵進入日常覺察，學習把抽象的訊息感與生活提問連在一起，整理出更可操作的理解方式。</p>
             <div class="learn">
               <b>你會學到</b>
@@ -565,7 +574,7 @@
             <small>第二班</small>
             <h3>卡巴拉生命之樹｜宇宙結構 ②</h3>
             <div class="date">2026.12.19 — 12.20</div>
-            <div class="place">台北碧湖｜兩日實體課程</div>
+            <div class="place"><strong>地脈共振來源</strong>｜台北碧湖<br><strong>實際上課地點</strong>｜花蓮市中央路三段 661 號</div>
             <p>以生命之樹作為一張結構地圖，幫助你辨識內在配置、習慣性卡點與資源流動的方向。</p>
             <div class="learn">
               <b>你會學到</b>
@@ -588,7 +597,7 @@
             <small>第三班</small>
             <h3>生命之花｜宇宙結構 ③</h3>
             <div class="date">2027.01.16 — 01.17</div>
-            <div class="place">台北碧湖｜兩日實體課程</div>
+            <div class="place"><strong>地脈共振來源</strong>｜台北碧湖<br><strong>實際上課地點</strong>｜花蓮市中央路三段 661 號</div>
             <p>從神聖幾何的觀點整理節奏與秩序，將抽象概念轉化為更容易體會與延續的學習方式。</p>
             <div class="learn">
               <b>你會學到</b>
@@ -660,7 +669,7 @@
         <h2 class="sec-title">報名流程</h2>
         <div class="sec-rule"></div>
       </div>
-      <p class="lead center">選擇你要參加的班次，填寫表單後，我們會透過官方 LINE 與你確認報名與付款資訊。</p>
+      <p class="lead center">選擇你要參加的班次，填寫表單後，我們會透過官方 LINE 與你確認報名與付款資訊。<br><br>所有班次實際上課地點皆為：<strong style="color:var(--gold-pale)">花蓮市中央路三段 661 號</strong>。各㛊所標示之七星潭、碧湖等地點，為該㛊的地脈共振來源與課程主題，並非集合或實際上課地點。</p>
       <div class="steps">
         <div class="step"><b>1</b><p>選擇班次<br>填寫報名表</p></div>
         <div class="step"><b>2</b><p>收到確認資訊<br>於指定期限內完成付款</p></div>
@@ -684,13 +693,14 @@
         <div class="info-card">
           <h3>付款方式</h3>
           <div class="row"><span>收款戶名</span><span>一定是揚昇實業社瓦遇 ‧ 㛊心</span></div>
-          <div class="row"><span>銀行代碼／銀行名稱</span><span>於報名表單完成提交時提供</span></div>
-          <div class="row"><span>帳號</span><span>於報名表單完成提夜時提供</span></div>
+          <div class="row"><span>銀行代碼／銀行名稱</span><span>808 玉山銀行</span></div>
+          <div class="row"><span>帳號</span><span>1023-9400-38227</span></div>
           <div class="row"><span>全支付（可刷卡）</span><span>請洽官方 LINE</span></div>
         </div>
         <div class="info-card">
           <h3>課程包含</h3>
           <div class="row"><span>兩天實體課程</span><span>12~16 小時</span></div>
+          <div class="row"><span>實際上課地點</span><span>花蓮市中央路三段 661 號</span></div>
           <div class="row"><span>能量環</span><span>個人使用／課堂領取</span></div>
           <div class="row"><span>教材與音頻</span><span>講義・共振卡・音頻包</span></div>
           <div class="row"><span>線上社群權限</span><span>依課程開放</span></div>
@@ -713,22 +723,26 @@
         </div>
         <div class="policy-card">
           <h3>二、參加對象</h3>
-          <p>建議年滿 18 歲且可獨立判斷之成年人參與。若正處於懷孕、重大手術恢復期、急性身心狀況不穩定、或不適合長時間戶外活動、靜坐與團體課程者，請先自行評估並主動告知。課程中若感到不適，可隨時暫停休息。</p>
+          <p>建議年滿 18 歲且可獨立判斷之成年人參與。若正處於懷孕、重大手術恢復期、急性身心狀況不穩定、或不適合長時間活動、靜坐與團體課程者，請先自行評估並主動告知。課程中若感到不適，可隨時暫停休息。</p>
         </div>
         <div class="policy-card">
           <h3>三、報名與付款</h3>
           <p>報名資料送出後，須依通知於期限內完成付款，席位方為保留。若逾期未付款，名額將釋出。課程相關通知以官方 LINE 或主辦單位通知內容為準。</p>
         </div>
         <div class="policy-card">
-          <h3>四、行政與主管機關事項</h3>
+          <h3>四、地點說明</h3>
+          <p>本網站所標示之「花蓮七星潭」「台北碧湖」等地點，為各㛊的地脈共振來源、課程主題與象徵地圖，並非實際集合或上課地點。所有班次實際上課地點皆為花蓮市中央路三段 661 號；課前通知亦會再次確認集合資訊。</p>
+        </div>
+        <div class="policy-card">
+          <h3>五、行政與主管機關事項</h3>
           <p>本活動為短期主題式體驗課程與身心覺察工作坊，非學制教育、非職業證照課程、非升學或技能檢定補習課程。若主管機關認定需辦理特定登記、申請或調整，本社將依法配合調整課程形式、報名方式與相關公告。</p>
         </div>
         <div class="policy-card">
-          <h3>五、影像與個資</h3>
+          <h3>六、影像與個資</h3>
           <p>活動現場可能進行影像紀錄。是否同意本人可辨識肖像用於日後課程紀錄或宣傳，可於報名表中自行選擇；不同意者不影響課程權益。個人資料將僅作課務聯繫、付款確認、發票或收據、行政紀錄與課程安全安排用途，並依相關法規妥善保存與處理。</p>
         </div>
         <div class="policy-card">
-          <h3>六、智慧財產權</h3>
+          <h3>七、智慧財產權</h3>
           <p>Florentis™ 為使用中商標（申請註冊中）。本系統教材、引導文字、音頻、課程架構、共振卡視覺與相關素材，均屬一定是揚昇實業社所有；未經書面同意，不得擅自重製、散布、改作、公開教學或商業使用。</p>
         </div>
       </div>
@@ -863,7 +877,7 @@
           </ul>
         </div>
         <div class="policy-card">
-          <h3>六、智慧財產權</h3>
+          <h3>七、智慧財產權</h3>
           <p>Florentis™ 為使用中商標（申請註冊中）。本系統之教材、引導文字、音頻、課程架構、㛊印記、共振卡視覺及其他相關素材，著作權與商標權均屬<strong>一定是揚昇實業社</strong>所有。</p>
           <p>學員於課程中所學內容，僅授權於個人學習與生活實踐使用。未經本社書面同意，不得重製、散布、改作課程教材或音頻，不得以本系統名義公開教學、提供服務，或於商業活動中使用 Florentis 品牌、㛊印記及相關標識。</p>
         </div>
@@ -916,7 +930,7 @@
         </div>
       </div>
       <div class="footer-note">
-        主辦單位：一定是揚昇實業社｜課程帶領：瓦遇・㛊心、謝丞翔<br>
+        主辦單位：一定是揚昇實業社｜課程帶領：瓦遇・㛊心<br>
         地址：花蓮市中央路三段 661 號｜Email：ascone333@gmail.com｜LINE：@843bdunc<br>
         Florentis™ 商標申請中｜版權所有：一定是揚昇實業社<br>
         © 2026 AWANA ING 安望納盈
